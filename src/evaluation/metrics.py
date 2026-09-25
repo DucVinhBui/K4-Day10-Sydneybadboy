@@ -45,6 +45,19 @@ def _token_f1(reference: str, prediction: str) -> float:
     return 2 * precision * recall / (precision + recall)
 
 
+def _breakdown_by_question_type(answers: list[dict[str, Any]]) -> dict[str, dict[str, float]]:
+    breakdown: dict[str, dict[str, float]] = {}
+    for question_type in sorted({item["question_type"] for item in answers}):
+        group = [item for item in answers if item["question_type"] == question_type]
+        breakdown[question_type] = {
+            "samples": len(group),
+            "retrieval_hit_rate": mean(1.0 if item["retrieval_hit"] else 0.0 for item in group),
+            "mean_token_f1": mean(item["token_f1"] for item in group),
+            "judge_accuracy": mean(1.0 if item["judge"]["correct"] else 0.0 for item in group),
+        }
+    return breakdown
+
+
 def _judge_answer(settings: Settings, question: str, reference: str, prediction: str) -> JudgeVerdict:
     prompt = f"""
 Evaluate the model answer against the reference answer.
@@ -135,7 +148,8 @@ def evaluate_pipeline(
         "retrieval_hit_rate": mean(1.0 if item["retrieval_hit"] else 0.0 for item in answers),
         "mean_token_f1": mean(item["token_f1"] for item in answers),
         "judge_accuracy": mean(1.0 if item["judge"]["correct"] else 0.0 for item in answers),
-        "mean_judge_score": mean(item["judge"]["score"] for item in answers),
+        "mean_judge_score": float(mean(item["judge"]["score"] for item in answers)),
+        "by_question_type": _breakdown_by_question_type(answers),
     }
     summary["ragas"] = _run_ragas(settings, answers)
 
