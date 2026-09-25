@@ -1,0 +1,36 @@
+{
+  "samples": 10,
+  "retrieval_hit_rate": 0.8,
+  "mean_token_f1": 0.8842105263157894,
+  "judge_accuracy": 0.9,
+  "mean_judge_score": 4.4,
+  "by_question_type": {
+    "authors": {
+      "samples": 3,
+      "retrieval_hit_rate": 0.6666666666666666,
+      "mean_token_f1": 1.0,
+      "judge_accuracy": 1.0
+    },
+    "categories": {
+      "samples": 2,
+      "retrieval_hit_rate": 1.0,
+      "mean_token_f1": 1.0,
+      "judge_accuracy": 1.0
+    },
+    "date": {
+      "samples": 2,
+      "retrieval_hit_rate": 1.0,
+      "mean_token_f1": 1.0,
+      "judge_accuracy": 1.0
+    },
+    "summary": {
+      "samples": 3,
+      "retrieval_hit_rate": 0.6666666666666666,
+      "mean_token_f1": 0.6140350877192983,
+      "judge_accuracy": 0.6666666666666666
+    }
+  },
+  "ragas": {
+    "skipped": "Set RUN_RAGAS=1 to enable the slower Ragas pass."
+  }
+}

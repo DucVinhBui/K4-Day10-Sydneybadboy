@@ -1,0 +1,88 @@
+{
+  "created_at": "2026-09-25T09:06:54.093864+00:00",
+  "seed": 42,
+  "input_rows": 24,
+  "output_rows": 22,
+  "corruption_types": 6,
+  "corruptions": [
+    {
+      "type": "drop_latest_records",
+      "description": "Removed the 5 most recently published records (20%).",
+      "affected_rows": 5,
+      "affected_paper_ids": [
+        "10.1145/3637528.3671812",
+        "10.1145/3637528.3671808",
+        "10.1145/3637528.3671804",
+        "10.1145/3637528.3671807",
+        "10.1145/3637528.3671802"
+      ],
+      "latest_published_before": "2026-07-22"
+    },
+    {
+      "type": "blank_summary",
+      "description": "Replaced summary with an empty string.",
+      "affected_rows": 3,
+      "affected_paper_ids": [
+        "10.1145/3637528.3671824",
+        "10.1145/3637528.3671821",
+        "10.1145/3637528.3671817"
+      ]
+    },
+    {
+      "type": "inject_noise",
+      "description": "Injected garbage tokens into the summary text.",
+      "affected_rows": 3,
+      "affected_paper_ids": [
+        "10.1145/3637528.3671810",
+        "10.1145/3637528.3671820",
+        "10.1145/3637528.3671815"
+      ]
+    },
+    {
+      "type": "truncate_title",
+      "description": "Truncated title to 7 characters.",
+      "affected_rows": 3,
+      "affected_paper_ids": [
+        "10.1145/3637528.3671818",
+        "10.1145/3637528.3671811",
+        "10.1145/3637528.3671803"
+      ],
+      "original_titles": [
+        "Advanced Perspectives on Semantic Layer Integration for Agentic Text-to-SQL Pipelines",
+        "Hybrid Search Architectures: Combining BM25 with Dense Representations",
+        "Mitigating Ghost Vectors in Dense Retrieval via Idempotent Indexing"
+      ]
+    },
+    {
+      "type": "stale_date",
+      "description": "Shifted published date back by 365 days.",
+      "affected_rows": 6,
+      "affected_paper_ids": [
+        "10.1145/3637528.3671819",
+        "10.1145/3637528.3671814",
+        "10.1145/3637528.3671813",
+        "10.1145/3637528.3671801",
+        "10.1145/3637528.3671806",
+        "10.1145/3637528.3671805"
+      ],
+      "original_published": [
+        "2026-06-07",
+        "2026-06-02",
+        "2026-06-01",
+        "2026-05-20",
+        "2026-05-02",
+        "2026-03-28"
+      ]
+    },
+    {
+      "type": "duplicate_rows",
+      "description": "Appended exact duplicate rows (same paper_id).",
+      "affected_rows": 3,
+      "affected_paper_ids": [
+        "10.1145/3637528.3671823",
+        "10.1145/3637528.3671818",
+        "10.1145/3637528.3671815"
+      ]
+    }
+  ]
+}

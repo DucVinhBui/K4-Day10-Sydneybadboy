@@ -1,0 +1,28 @@
+[
+  {
+    "question": "Which papers discuss freshness SLAs for LLM knowledge augmentation?",
+    "provider": "mock",
+    "mode": "extractive_fallback",
+    "answer": "We define freshness service-level agreements (SLAs) for temporal document ingestion.",
+    "retrieved_titles": [
+      "Freshness SLAs for Real-Time LLM Knowledge Augmentation",
+      "Advanced Perspectives on Freshness SLAs for Real-Time LLM Knowledge Augmentation",
+      "Advanced Perspectives on Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks",
+      "Agentic Retrieval-Augmented Generation for Knowledge-Intensive Tasks"
+    ],
+    "agent_error": null
+  },
+  {
+    "question": "How can Great Expectations be used for automated data quality profiling?",
+    "provider": "mock",
+    "mode": "extractive_fallback",
+    "answer": "An extended empirical study on mbedding quality checks directly into data pipelines enables fail-closed governance.",
+    "retrieved_titles": [
+      "Advanced Perspectives on Automated Data Quality Profiling with Great Expectations in CI/CD",
+      "Automated Data Quality Profiling with Great Expectations in CI/CD",
+      "Advanced Perspectives on Data Observability and Quality Gates for Production RAG Systems",
+      "Data Observability and Quality Gates for Production RAG Systems"
+    ],
+    "agent_error": null
+  }
+]

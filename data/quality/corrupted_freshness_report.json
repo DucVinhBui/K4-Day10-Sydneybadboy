@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-09-25T09:06:54.170691+00:00",
+  "latest_published": "2026-06-12",
+  "oldest_published": "2025-03-28",
+  "latest_age_days": 105,
+  "median_age_days": 113.5,
+  "threshold_days": 180,
+  "max_stale_ratio": 0.25,
+  "stale_rows": 6,
+  "total_rows": 22,
+  "stale_ratio": 0.2727,
+  "is_fresh": false,
+  "status": "STALE_ALERT"
+}
