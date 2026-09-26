@@ -5,7 +5,7 @@
 | Thông tin         | Nội dung                  |
 | ------------------ | -------------------------- |
 | Họ và tên       | Bùi Đức Vinh               |
-| MSSV               | [MSSV]                     |
+| MSSV               | 2A202602801                |
 | Khóa/Lớp         | K4                         |
 | Tên nhóm         | Sydneybadboy               |
 | Vai trò chính    | Trưởng nhóm — Corruption & Integration owner |

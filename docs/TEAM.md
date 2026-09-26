@@ -12,7 +12,7 @@ Nhóm có 3 thành viên, phân công theo bảng "Nhóm 3 thành viên" trong `
 
 | STT | Họ và tên | MSSV | Email | Vai trò & Phân công công việc | Báo cáo cá nhân |
 |---:|---|---|---|---|---|
-| 1 | Bùi Đức Vinh | [MSSV] | | Trưởng nhóm / Corruption & Integration owner (`corruption.py`, `phase1.py`, `corruption_flow.py`, `retrieval/index.py`, môi trường `uv`) | [`report/MSSV_BuiDucVinh.md`](../report/MSSV_BuiDucVinh.md) |
+| 1 | Bùi Đức Vinh | 2A202602801 | | Trưởng nhóm / Corruption & Integration owner (`corruption.py`, `phase1.py`, `corruption_flow.py`, `retrieval/index.py`, môi trường `uv`) | [`report/2A202602801_BuiDucVinh.md`](../report/2A202602801_BuiDucVinh.md) |
 | 2 | Bùi Đức Thông | 2A202602931 | | Data Ingestion & Cleaning owner (`crossref.py`, `cleaning.py`, raw/clean schema) | [`report/2A202602931_BuiDucThong.md`](../report/2A202602931_BuiDucThong.md) |
 | 3 | Đỗ Phúc Hưng | 2A202602762 | | Evaluation & Observability owner (`testset.py`, `quality.py` GX 1.x, `reporting.py`, `dashboard.py`, `tests/`) | [`report/2A202602762_DoPhucHung.md`](../report/2A202602762_DoPhucHung.md) |
 
@@ -20,7 +20,7 @@ Nhóm có 3 thành viên, phân công theo bảng "Nhóm 3 thành viên" trong `
 
 ## # Cá nhân
 
-### ## BuiDucVinh-[MSSV]
+### ## BuiDucVinh-2A202602801
 - **Vai trò:** Trưởng nhóm, Corruption & Integration owner.
 - **Công việc chi tiết đã hoàn thành:**
   - Viết `src/ingestion/corruption.py`: tiêm 6 lỗi (drop latest 20%, blank summary, inject noise, truncate title, stale date −365 ngày, duplicate rows) với seed 42, các tập dòng bị lỗi rời nhau, ghi `data/results/corruption_log.json`.

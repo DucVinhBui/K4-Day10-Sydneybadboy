@@ -13,7 +13,7 @@
 
 | STT | Họ và tên | MSSV | Vai trò chính | Module/deliverable sở hữu |
 | --: | --- | --- | --- | --- |
-| 1 | Bùi Đức Vinh | [MSSV] | Trưởng nhóm, Corruption & Integration owner | `src/ingestion/corruption.py`, `src/pipelines/phase1.py`, `src/pipelines/corruption_flow.py`, `src/retrieval/index.py`, môi trường `uv` + CI |
+| 1 | Bùi Đức Vinh | 2A202602801 | Trưởng nhóm, Corruption & Integration owner | `src/ingestion/corruption.py`, `src/pipelines/phase1.py`, `src/pipelines/corruption_flow.py`, `src/retrieval/index.py`, môi trường `uv` + CI |
 | 2 | Bùi Đức Thông | 2A202602931 | Data Ingestion & Cleaning owner | `src/ingestion/crossref.py`, `src/ingestion/cleaning.py`, `data/raw/`, `data/clean/` |
 | 3 | Đỗ Phúc Hưng | 2A202602762 | Evaluation & Observability owner | `src/evaluation/testset.py`, `src/observability/quality.py`, `reporting.py`, `dashboard.py`, `tests/` |
 
@@ -262,5 +262,5 @@ Kết luận nhân quả:
 - [x] Bảng metrics khớp với các file trong `data/results/`.
 - [x] Quality/freshness conclusions khớp với `data/quality/`.
 - [x] Các đường dẫn báo cáo và artifact truy cập được.
-- [x] Mỗi thành viên đã hoàn thành báo cáo vai trò riêng (`report/2A202602931_BuiDucThong.md`, `report/2A202602762_DoPhucHung.md`, `report/MSSV_BuiDucVinh.md`).
+- [x] Mỗi thành viên đã hoàn thành báo cáo vai trò riêng (`report/2A202602931_BuiDucThong.md`, `report/2A202602762_DoPhucHung.md`, `report/2A202602801_BuiDucVinh.md`).
 - [x] Không có `.env`, API key, token hoặc secret trong source, report, log hay ảnh.
